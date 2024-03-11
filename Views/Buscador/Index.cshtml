@@ -1,1 +1,56 @@
-﻿
+﻿<script>
+    Inicio.classList.remove("active");
+    Ofertas.classList.add("active");
+</script>
+
+<section class="container-fluid border-bottom pb-3">
+    <div class="row fs-6">
+        <div class="col">
+            <label>Filtrar por:</label>
+            <select class="form-select">
+                <option value="">Fecha</option>
+                <option value="">Salario</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Categorías:</label>
+            <select class="form-select">
+                <option value="">Ingeniería</option>
+                <option value="">Finanzas</option>
+                <option value="">Mecánica</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Lugar:</label>
+            <select class="form-select">
+                <option value="">Tipitapa</option>
+                <option value="">Ciudad Sandino</option>
+                <option value="">Corinto</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Ordenar por:</label>
+            <select class="form-select">
+                <option value="">Ascendente</option>
+                <option value="">Descendente</option>
+            </select>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid p-3">
+    <div class="row">
+        @for(int i = 0; i < 20; i++)
+        {
+        <div class="col m-2">
+            <div class="card">
+                <div class="card-header">Encargado de informática</div>
+                <div class="card-body">Se solicita ingeniero en sistemas/computacion para ser encargado del área de informática.</div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn boton btn-outline-dark">Postularme</button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>

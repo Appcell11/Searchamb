@@ -16,3 +16,55 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.contenedor-principal {
+    background-image: url("../Images/5594016.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.grupoinput {
+    border-radius: 20px;
+    border: 2px solid gray;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 0.5em;
+    max-width: 90%;
+    min-width: 70%;
+    align-items: center;
+    padding: 0.3em;
+    padding-left: 1em;
+    background-color: white;
+}
+/*
+.grupoinput > button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0;
+}*/
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.inputsearch {
+    /*background-color: aqua;*/
+    width: 75%;
+}
+
+.inputsearch:focus {
+    outline: none;
+}
+
+.contOfer {
+    height:90vh;
+}

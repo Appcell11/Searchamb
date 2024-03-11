@@ -10,43 +10,37 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Searchamb</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a id="Inicio" class="nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Buscador" asp-action="Index">Buscador</a>
+                            <a id="Ofertas" class="nav-link" asp-controller="Buscador" asp-action="Index">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Menú
-                            </a>
-                            <ul class="dropdown-menu text-white">
-                                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                                <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
-                                <li><a class="dropdown-item" href="#">Términos y condiciones</a></li>
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Privacy">Política de privacidad</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu text-black">
+                                <li><a class="dropdown-item text-black" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Quiénes somos</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Términos y condiciones</a></li>
+                                <li><a class="dropdown-item text-black" asp-controller="Home" asp-action="Privacy">Política de privacidad</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-danger" href="#">Cerrar Sesión</a></li>
                             </ul>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
@@ -56,6 +50,11 @@
             &copy; 2024 - Searchamb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    <script>
+        const Inicio = document.getElementById("Inicio");
+        const Ofertas = document.getElementById("Ofertas");
+    </script>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
